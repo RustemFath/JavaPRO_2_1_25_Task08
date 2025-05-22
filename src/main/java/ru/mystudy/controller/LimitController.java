@@ -21,8 +21,8 @@ public class LimitController {
     }
 
     @PostMapping("/limit/execute")
-    public LimitResponse executePayment(@RequestBody LimitExecuteRequest limitExecuteRequest) {
-        log.info("post, method: executePayment, ExecuteLimitRequest - {}", limitExecuteRequest);
+    public LimitResponse executeLimit(@RequestBody LimitExecuteRequest limitExecuteRequest) {
+        log.info("post, method: executeLimit, ExecuteLimitRequest - {}", limitExecuteRequest);
         return limitService.executeLimit(limitExecuteRequest);
     }
 
